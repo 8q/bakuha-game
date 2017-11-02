@@ -7,19 +7,26 @@ public class MyMicrophone : MonoBehaviour {
 
     private GaugeSystem gauge;
 
-	void Start()
+    private bool isMicrophoneSet = false;
+
+	IEnumerator Start()
     {
 		var aud = GetComponent<AudioSource> ();
 		aud.clip = Microphone.Start(null, true, 999, 44100);
 		aud.loop = true;
-		while (!(Microphone.GetPosition("") > 0)){}
+		while (!(Microphone.GetPosition("") > 0))
+        {
+            yield return null;
+        }
 		aud.Play();
-
         gauge = GameObject.Find("Systems/GaugeSystem").GetComponent<GaugeSystem>();
+        isMicrophoneSet = true;
     }
 	
 	void Update()
     {
+        if (!isMicrophoneSet) return;
+
         float vol = GetAveragedVolume();
         float size = 450 * vol;
         gauge.SetValue(size);
