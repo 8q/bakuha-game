@@ -1448,6 +1448,7 @@ MonoBehaviour:
   explosion: {fileID: 1474959669601566, guid: 6b624f6893d5e904783f9353ebb6b67c, type: 2}
   explosionCount: 5
   explosionRange: 40
+  explosionInterval: 0.15
 --- !u!1 &1697886949
 GameObject:
   m_ObjectHideFlags: 0
