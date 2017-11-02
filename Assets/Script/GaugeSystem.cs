@@ -24,10 +24,11 @@ public class GaugeSystem : MonoBehaviour {
 
         if (stop) return;
 
+        if (height > 223.0f) height = 223.0f;
         var rectTransform = gauge.GetComponent<RectTransform>();
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, height);
         rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, -111 + height / 2, rectTransform.localPosition.z);
-        if (height > 223.0f) height = 223.0f;
+
 
         float border = 170.0f;
         if (height <= border)

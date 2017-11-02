@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BakuhatuSystem : MonoBehaviour {
 
@@ -36,5 +37,8 @@ public class BakuhatuSystem : MonoBehaviour {
         }
         Instantiate(fire, new Vector3(0, 0, 0), Quaternion.identity);
         Destroy(building);
+
+        yield return new WaitForSeconds(8);
+        SceneManager.LoadScene("dialog", LoadSceneMode.Additive);
     }
 }
