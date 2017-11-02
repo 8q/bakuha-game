@@ -156,6 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4716891595269770}
   - component: {fileID: 82571486045302818}
+  - component: {fileID: 114456505114311502}
   m_Layer: 0
   m_Name: Bakuhatu
   m_TagString: Untagged
@@ -430,6 +431,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114456505114311502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1474959669601566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fe6b1814c7f9c44b0727d0058b0f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114481110355163934
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour {
+public class MyCamera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,7 +11,7 @@ public class Camera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(0, (Input.GetAxis("Horizontal") * 1), 0);
+        transform.Rotate(0, (Input.GetAxis("Horizontal") * -1), 0);
 
     }
 }
