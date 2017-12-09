@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BakuhatuSystem : MonoBehaviour {
+public class BakuhatuSystem : MonoBehaviour
+{
 
     public GameObject building, fire, explosion;
 
@@ -13,14 +14,16 @@ public class BakuhatuSystem : MonoBehaviour {
 
     public float explosionInterval = 0.15f;
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void Ignition()
     {

@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GaugeSystem : MonoBehaviour {
+public class GaugeSystem : MonoBehaviour
+{
 
     public GameObject gauge;
 
     public bool stop = false;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void SetValue(float height)
     {
